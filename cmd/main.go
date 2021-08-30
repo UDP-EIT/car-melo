@@ -1,10 +1,10 @@
 package main
 
 import (
-	"../db"
-	"github.com/gin-gonic/gin"
+	api "cars/api"
+	"cars/db"
 
-	api "../api"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -14,6 +14,8 @@ func main() {
 	server.GET("/cars", api.GetAllCars)
 	server.GET("/carsbycolor", api.GetCarsByColor)
 	server.POST("/cars", api.NewCar)
+	server.POST("/owners", api.NewOwner)
+	server.POST("/brands", api.NewBrand)
 	server.Run()
 
 }

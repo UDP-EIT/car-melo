@@ -1,6 +1,6 @@
 package main
 
-import db "../db"
+import db "cars/db"
 
 func main() {
 

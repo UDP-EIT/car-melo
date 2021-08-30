@@ -9,8 +9,10 @@ import (
 // Owner have a name,last name email and relationship to car
 type Owner struct {
 	gorm.Model
-	Name     string
-	LastName string
-	Email    string
-	Car      Car `gorm:"foreignKey:ID"`
+	Id       int
+	Name     string `json:"name"`
+	LastName string `json:"last_name"`
+	Email    string `json:"email"`
+	CarId    int
+	Car      Car
 }

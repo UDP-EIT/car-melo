@@ -6,6 +6,7 @@ import (
 
 type Brand struct {
 	gorm.Model
-	Name   string
-	Origin string
+	ID     int
+	Name   string `json:"name"`
+	Origin string `json:"origin"`
 }

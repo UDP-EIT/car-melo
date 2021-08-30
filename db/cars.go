@@ -6,10 +6,12 @@ import (
 
 type Car struct {
 	gorm.Model
-	Color  string `json:"color"`
-	Modelo string `json:"model"`
-	Year   int    `json:"year"`
-	Price  int    `json:"price"`
-	Engine string `json:"engine"`
-	Brand  Brand  `gorm:"foreignKey:ID"`
+	Id      int
+	Color   string `json:"color"`
+	Modelo  string `json:"model"`
+	Year    int    `json:"year"`
+	Price   int    `json:"price"`
+	Engine  string `json:"engine"`
+	BrandId int
+	Brand   Brand
 }

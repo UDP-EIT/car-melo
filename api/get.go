@@ -1,7 +1,8 @@
 package api
 
 import (
-	db "../db"
+	db "cars/db"
+
 	"github.com/gin-gonic/gin"
 )
 
